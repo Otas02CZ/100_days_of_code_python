@@ -1,64 +1,55 @@
 # this is a rock paper scissors game simulator
 
-from rich.prompt import Prompt
+from rich.prompt import IntPrompt
 from random import randint
 
-hand_moves : dict = {
-    "rock" : """
+hand_moves : list[list[str]] = [
+    ["rock", """
     _______
 ---'   ____)
       (_____)
       (_____)
       (____)
 ---.__(___)
-    """,
-
-    "paper" : '''
+    """],
+    ["paper", '''
     _______
 ---'   ____)____
           ______)
           _______)
          _______)
 ---.__________)
-''',
-
-    "scissors" : '''
+'''],
+    ["scissors", '''
     _______
 ---'   ____)____
           ______)
        __________)
       (____)
 ---.__(___)
-'''
-}
+''']]
 
-your_move : str = Prompt.ask("What is your move", choices=["rock", "paper", "scissors"])
-print(f"Your move is {your_move}:\n{hand_moves[your_move]}")
-computer_move : str = ""
-match randint(0, 2):
-    case 0:
-        print(f"Computer move is rock:\n{hand_moves['rock']}")
-        computer_move = "rock"
-    case 1:
-        print(f"Computer move is paper:\n{hand_moves['paper']}")
-        computer_move = "paper"
-    case 2:
-        print(f"Computer move is scissors:\n{hand_moves['scissors']}")
-        computer_move = "scissors"
-        
+print("Welcome to rock/paper/scissors game")
+your_move : int = IntPrompt.ask("What is your move (rock, paper, scissors)", choices=["0", "1", "2"])
+print(f"Your move is {hand_moves[your_move][0]}:\n{hand_moves[your_move][1]}")
+computer_move : int = randint(0, 2)
+print(f"Computer move is {hand_moves[computer_move][0]}:\n{hand_moves[computer_move][1]}")
 if your_move == computer_move:
     print("It is a draw ")
-elif your_move == "rock" and computer_move == "scissors":
-    print("You have won")
-elif your_move == "rock" and computer_move == "paper":
-    print("You have lost")
-elif your_move == "paper" and computer_move == "scissors":
-    print("You have lost")
-elif your_move == "paper" and computer_move == "rock":
-    print("You have won")
-elif your_move == "scissors" and computer_move == "paper":
-    print("You have won")
 else:
-    print("You have lost")
-
-# might optimize the elif statement hell
+    match your_move:
+        case 0: # rock
+            if computer_move == 1: # paper
+                print("You have lost")
+            else: # scissors
+                print("You have won")
+        case 1: # paper
+            if computer_move == 2: # scissors
+                print("You have lost")
+            else: # rock
+                print("You have won")
+        case 2: # scissors
+            if computer_move == 0: # rock
+                print("You have lost")
+            else: # paper
+                print("You have won")

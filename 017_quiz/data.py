@@ -1,0 +1,37 @@
+# question_data = [
+#     {"text": "A slug's blood is green.", "answer": "True"},
+#     {"text": "The loudest animal is the African Elephant.", "answer": "False"},
+#     {"text": "Approximately one quarter of human bones are in the feet.", "answer": "True"},
+#     {"text": "The total surface area of a human lungs is the size of a football pitch.", "answer": "True"},
+#     {"text": "In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat.", "answer": "True"},
+#     {"text": "In London, UK, if you happen to die in the House of Parliament, you are entitled to a state funeral.", "answer": "False"},
+#     {"text": "It is illegal to pee in the Ocean in Portugal.", "answer": "True"},
+#     {"text": "You can lead a cow down stairs but not up stairs.", "answer": "False"},
+#     {"text": "Google was originally called 'Backrub'.", "answer": "True"},
+#     {"text": "Buzz Aldrin's mother's maiden name was 'Moon'.", "answer": "True"},
+#     {"text": "No piece of square dry paper can be folded in half more than 7 times.",
+#         "answer": "False"},
+#     {"text": "A few ounces of chocolate can to kill a small dog.", "answer": "True"}
+# ]
+
+question_data = [
+    {"category": "Entertainment: Video Games", "type": "boolean", "difficulty": "easy", "question": "The main character in the &quot;Half-Life&quot; franchise is named Morgan Freeman.", "correct_answer": "False", "incorrect_answers": ["True"]},
+    {"category": "Entertainment: Film", "type": "boolean", "difficulty": "easy", "question": "Leonardo DiCaprio won an Oscar for Best Actor in 2004&#039;s &quot;The Aviator&quot;.", "correct_answer": "False", "incorrect_answers": ["True"]},
+    {"category": "General Knowledge", "type": "boolean", "difficulty": "easy", "question": "Gumbo is a stew that originated in Louisiana.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"category": "Entertainment: Video Games", "type": "boolean", "difficulty": "easy", "question": "In &quot;Super Mario 64&quot;, collecting 100 coins on a level will give you a 1-UP.", "correct_answer": "False", "incorrect_answers": ["True"]},
+    {"category": "Politics", "type": "boolean", "difficulty": "easy", "question": "There was a satirical candidate named &quot;Deez Nuts&quot; running in the 2016 US presidential elections.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"category": "Animals", "type": "boolean", "difficulty": "easy", "question": "Kangaroos keep food in their pouches next to their children.", "correct_answer": "False", "incorrect_answers": ["True"]},
+    {"category": "Entertainment: Books", "type": "boolean", "difficulty": "easy", "question": "The &quot;Berenstein Bears&quot; is the correct spelling of the educational children&#039;s book series&#039; name.", "correct_answer": "False", "incorrect_answers": ["True"]},
+    {"category": "Entertainment: Film", "type": "boolean", "difficulty": "easy", "question": "The word &quot;Inception&quot; came from the 2010 blockbuster hit &quot;Inception&quot;.", "correct_answer": "False", "incorrect_answers": ["True"]},
+    {"category": "General Knowledge", "type": "boolean", "difficulty": "easy", "question": "Nutella is produced by the German company Ferrero.", "correct_answer": "False", "incorrect_answers": ["True"]},
+    {"category": "Entertainment: Video Games", "type": "boolean", "difficulty": "easy", "question": "Donkey Kong was originally set to be a Popeye arcade game.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"category": "Entertainment: Video Games", "type": "boolean", "difficulty": "easy", "question": "Gordon Freeman, the protagonist of &quot;Half-Life&quot;, is said to have once had a ponytail.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"category": "Politics", "type": "boolean", "difficulty": "easy", "question": "Russia passed a law in 2013 which outlaws telling children that homosexuals exist.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"category": "Science: Gadgets", "type": "boolean", "difficulty": "easy", "question": "Microphones can be used not only to pick up sound, but also to project sound similar to a speaker.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"category": "Entertainment: Film", "type": "boolean", "difficulty": "easy", "question": "George Lucas directed the entire original Star Wars trilogy.", "correct_answer": "False", "incorrect_answers": ["True"]},
+    {"category": "Science & Nature", "type": "boolean", "difficulty": "easy", "question": "Psychology is the science of behavior and mind.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"category": "Politics", "type": "boolean", "difficulty": "easy", "question": "Former president Theodore Roosevelt (1900-1908)  ran for another term under the Progressive Party in 1912.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"category": "Geography", "type": "boolean", "difficulty": "easy", "question": "Rhode Island is actually located on the US mainland, despite its name.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"category": "General Knowledge", "type": "boolean", "difficulty": "easy", "question": "Slovakia is a member of European Union-", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"category": "General Knowledge", "type": "boolean", "difficulty": "easy", "question": "The mitochondria is the powerhouse of the cell.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"category": "Entertainment: Video Games", "type": "boolean", "difficulty": "easy", "question": "In Resident Evil 4, the Chicago Typewriter has infinite ammo.", "correct_answer": "True", "incorrect_answers": ["False"]}]
